@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="inicio.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Bronce',     331],
+          ['Silver',      320],
+          ['Gold',      318],
+        ]);
+
+        var options = {
+          title: 'Medallas obtenidas por las mujeres'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    
+    <img src="https://yesireth.github.io/LIM015-data-lovers/src/images/banner.png" alt="Deportes">
+
+    <br>
+
+    <div class="text">
+        <div class="container">
+            <div class="button">
+                <h1 align="center">
+                    <a href="#" class="btn btn-deportes">Juegos olímpicos Rio de Janeiro 2016</a>
+                </h1>
+            </div>
+        </div>
+
+        <br>
+    
+        Los XXXI Juegos Olímpicos de Verano se celebraron en la ciudad de Río de Janeiro, Brasil, entre el 5 y el 21 de 
+        agosto de 2016. La elección de Río marcó la primera vez en que Brasil ha sido designado como sede de los Juegos 
+        Olímpicos. Además, es la primera vez que se realiza en un país sudamericano.
+    
+        En esta edición de los Juegos Olímpicos participaron 11.551 atletas de 207 comités olímpicos nacionales — Kosovo 
+        y Sudán del Sur participaron por primera vez —, que compitieron en 306 eventos de 28 deportes, incluyendo el 
+        rugby 7 y el golf, agregados al programa olímpico en 2009. Las competiciones se llevaron a cabo en 33 recintos 
+        deportivos de cuatro barrios de Río de Janeiro —Maracaná, Barra da Tijuca, Deodoro y Copacabana— y en cinco 
+        estadios ubicados en las ciudades de São Paulo, Belo Horizonte, Salvador de Bahía, Brasilia y Manaus.
+    </p>
+  
+    <div class="contenido">
+        <h2 align="center">
+            <u>Participación femenina</u>
+        </h2>
+        <div class="box">
+            <img src="https://yesireth.github.io/LIM015-data-lovers/src/images/mujer1.jpg" alt="Simone Manuel" width="200px" height="250px">
+            <p class="text-justify">
+                <strong>
+                    Simone Manuel
+                </strong>
+            </p>
+            <p class="text-justify">
+                <p id="text">Especialidad: Natación</p>
+            </p>
+            </p>
+        </div>
+        <div class="box">
+            <img src="https://yesireth.github.io/LIM015-data-lovers/src/images/mujer3.jpg" alt="Simone Biles" width="200px" height="250px">
+            <p class="text-justify">
+                <strong>
+                    Oksana Chusovitina
+                </strong>
+            </p>
+            <p class="text-justify">
+                <p id="text">Especialidad: Gimnasio</p>
+            </p>
+        </div>
+        <div class="box">
+            <img src="https://gov-civil-portalegre.pt/img/athlete/17/katie-ledecky-net-worth-2.jpg" alt="Katie Ledecky" width="200px" height="250px">
+            <p class="text-justify">
+                <strong>
+                    Katie Ledecky
+                </strong>
+            </p>
+            <p class="text-justify">
+                <p id="text">Especilidad: Natación</p>
+            </p>
+        </div>
+        <div class="box">
+            <img src="https://www.ciclismointernacional.com/wp-content/uploads/2020/09/50026307_2080470105374541_580218814327685120_n.png" alt="Anna van der Breggen" width="200px" height="250px">
+            <p class="text-justify">
+                <strong>
+                    Anna van der Breggen
+                </strong>
+            </p>
+            <p class="text-justify">
+                <p id="text">Especilidad: Ciclismo</p>
+            </p>
+        </div>
+        <div class="box">
+            <img src="https://albertonews.com/wp-content/uploads/2019/09/rafaela.jpg_1462872532.jpg" alt="Rafaela Silva" width="200px" height="250px">
+            <p class="text-justify">
+                <strong>
+                    Rafaela Silva
+                </strong>
+            </p>
+            <p class="text-justify">
+                <p id="text">Especilidad: Judo</p>
+            </p>
+        </div>  
+    </div>
+
+    <div class="text">
+        La primera participación en Juegos de una mujer fue en 1900 en las disciplinas de tenis y golf. En 
+        más de un siglo han llegado a representar casi la mitad del total de participantes. Londres 2012 fue 
+        la primera cita olímpica donde todos los países tuvieron una mujer entre sus atletas. Las mujeres 
+        suponen más del 50% de los atletas participantes en triatlón, tenis de mesa y bádminton. Gimnasia 
+        rítmica, natación sicronizada y sófbol son deportes donde sólo han participado mujeres.
+        
+        En la edición de Río de Janeiro 2016 se marcó un hito en la participación femenina en Juegos Olímpicos.
+        Por primera vez alcanzó el 45% de los 12000 deportistas, es decir, 5600 damas llegaron a la "Cidade 
+        Maravilhosa".
+    </div>
+
+    <br>
+
+    <div class="estadistica">
+        <div id="piechart" style="width: 400px; height: 200px;"></div>
+    </div>
+
+    <script src="inicio.js"></script>
+   
+</body>
+</html>

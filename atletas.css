@@ -1,0 +1,235 @@
+body{
+    background: cadetblue;
+    padding: 0;
+    margin: 0 auto 90px auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 20px;
+}
+
+.btn-atletas{
+    color: black;
+}
+
+.btn-atletas::after, .btn-atletas::before{
+    border: 3px solid black;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-atletas:hover::after{
+    transform: translate(-5px, -5px)
+}
+
+.btn-atletas:hover::before{
+    transform: translate(5px, 5px)
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    width: 79rem;
+}
+
+.wrap{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    float: left;
+}
+
+.tarjeta-wrap{
+    margin: 20px;
+    width: 160px;
+    height: 150px;
+    line-height: 150px;   
+}
+
+.tarjeta{
+    width: 203px;
+    height: 220px;
+    background-color: none;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(112, 201, 112);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+}
+
+.card1{
+    background-image: url(Atletas/1.png);
+}
+
+.card2{
+    background-image: url(Atletas/2.png);
+}
+
+.card3{
+    background-image: url(Atletas/3.png);
+}
+
+.card4{
+    background-image: url(Atletas/4.png);
+}
+
+.card5{
+    background-image: url(Atletas/5.png);
+}
+
+.card6{
+    background-image: url(Atletas/6.png);
+}
+
+.card7{
+    background-image: url(Atletas/7.png);
+}
+
+.card8{
+    background-image: url(Atletas/8.png);
+}
+
+.card9{
+    background-image: url(Atletas/9.png);
+}
+
+.card10{
+    background-image: url(Atletas/10.png);
+}
+
+.card11{
+    background-image: url(Atletas/11.png);
+}
+
+.card12{
+    background-image: url(Atletas/12.png);
+}
+
+.card13{
+    background-image: url(Atletas/13.png);
+}
+
+.card14{
+    background-image: url(Atletas/14.png);
+}
+
+.card15{
+    background-image: url(Atletas/15.png);
+}
+
+.card16{
+    background-image: url(Atletas/16.png);
+}
+
+.card17{
+    background-image: url(Atletas/17.png);
+}
+
+
+.card18{
+    background-image: url(Atletas/18.png);
+}
+
+.card19{
+    background-image: url(Atletas/19.png);
+}
+
+.card20{
+    background-image: url(Atletas/20.png);
+}
+
+.card21{
+    background-image: url(Atletas/21.png);
+}
+
+.card22{
+    background-image: url(Atletas/22.png);
+}
+
+.card23{
+    background-image: url(Atletas/23.png);
+}
+
+.card24{
+    background-image: url(Atletas/24.png);
+}
+
+.card25{
+    background-image: url(Atletas/25.png);
+}
+
+.card26{
+    background-image: url(Atletas/26.png);
+}
+
+.card27{
+    background-image: url(Atletas/27.png);
+}
+
+.card28{
+    background-image: url(Atletas/28.png);
+}
+
+.card29{
+    background-image: url(Atletas/29.png);
+}
+
+
+.atletas{
+    width: 400px;
+    height: 220px;
+}
+
+
+

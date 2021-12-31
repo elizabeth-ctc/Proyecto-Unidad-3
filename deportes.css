@@ -1,0 +1,66 @@
+body{
+    background: cadetblue;
+    padding: 0;
+    margin: 0 auto 90px auto;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+    margin: 20px;
+}
+
+.btn-deportes{
+    color: black;
+}
+
+.btn-deportes::after, .btn-deportes::before{
+    border: 3px solid black;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-deportes:hover::after{
+    transform: translate(-5px, -5px)
+}
+
+.btn-deportes:hover::before{
+    transform: translate(5px, 5px)
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20;
+    margin: 30;
+    list-style: none;
+    text-align: center;
+    width: 79rem;
+}
+
+.flex-child{
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    padding: 20x;
+    float: left;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}

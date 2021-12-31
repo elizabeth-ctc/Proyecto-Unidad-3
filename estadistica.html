@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title>
+    <link rel="stylesheet" href="estadistica.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="button">
+            <h1 align="center">
+                <a href="#" class="btn btn-medallas">Total de medallas de los Juegos olimpicos de Rio de Janeiro 2016</a>
+            </h1>
+        </div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div id="main-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Oro</th>
+                    <th>Plata</th>
+                    <th>Bronce</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ITA.png"> ITA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">8</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">40</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">24</th>
+                <th>72</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/AZE.png"> FRA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">20</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">55</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">21</th>
+                <th>96</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/IRI.png"> IRI</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">4</th>
+                <th>8</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/RUS.png"> Rus</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">52</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">28</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">35</th>
+                <th>115</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/AUS.png"> AUS</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">23</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">34</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">25</th>
+                <th>82</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ESP.png"> ESP</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">9</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">19</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">17</th>
+                <th>45</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/JOR.png"> JOR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/NED.png"> NED</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">9</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">25</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">13</th>
+                <th>47</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/GBR.png"> GBR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">64</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">55</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">26</th>
+                <th>145</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/USA.png"> USA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">139</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">54</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">71</th>
+                <th>264</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/NZL.png"> NZL</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">6</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">25</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">5</th>
+                <th>36</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/RSA.png"> RSA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">7</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">14</th>
+                <th>23</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/INA.png"> INA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>4</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/GER.png"> GER</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">49</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">43</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">67</th>
+                <th>159</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/NGR.png"> NGR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">18</th>
+                <th>18</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/CAN.png"> CAN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">4</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">4</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">61</th>
+                <th>69</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/TUR.png"> TUR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">4</th>
+                <th>8</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/UZB.png"> UZB</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">4</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">7</th>
+                <th>13</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/IOA.png"> IOA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ARM.png"> ARM</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>4</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/SRB.png"> SRB</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">14</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">27</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">13</th>
+                <th>54</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/NIG.png"> NIG</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/BRA.png"> BRA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">36</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">8</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">6</th>
+                <th>50</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/JAM.png"> JAM</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">11</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">17</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>30</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/NOR.png"> NOR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">19</th>
+                <th>19</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/CUB.png"> CUB</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">5</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">4</th>
+                <th>11</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/COL.png"> COL</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">3</th>
+                <th>8</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/TUN.png"> TUN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">3</th>
+                <th>3</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/KOR.png"> KOR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">13</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">10</th>
+                <th>26</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/DEN.png"> DEN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">15</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">10</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">16</th>
+                <th>41</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/SWE.png"> SWE</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">23</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">3</th>
+                <th>28</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/JPN.png"> JPN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">17</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">13</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">34</th>
+                <th>64</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/MAS.png"> MAS</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">7</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>8</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ETH.png"> ETH</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">5</th>
+                <th>8</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/SUI.png"> SUI</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">6</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>11</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/KAZ.png"> KAZ</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">5</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">10</th>
+                <th>18</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/QAT.png"> QAT</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/UKR.png"> UKR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">8</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">5</th>
+                <th>15</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/SVK.png"> SVK</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">5</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>8</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ROU.png"> ROU</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">4</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">10</th>
+                <th>16</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/CRO.png"> CRO</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">7</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">15</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>24</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/BEL.png"> BEL</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">17</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>21</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/HUN.png"> HUN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">12</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">7</th>
+                <th>22</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/GEO.png"> GEO</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">4</th>
+                <th>7</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/BAH.png"> BAH</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">5</th>
+                <th>6</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ARG.png"> ARG</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">21</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>22</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/CHN.png"> CHN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">46</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">30</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">37</th>
+                <th>113</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/KEN.png"> KEN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">6</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">6</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>13</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/PRK.png"> PRK</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>7</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/POL.png"> POL</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">10</th>
+                <th>16</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/CIV.png"> CIV</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/FIJ.png"> FIJ</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">13</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>13</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/BUL.png"> BUL</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">6</th>
+                <th>7</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/PHI.png"> PHI</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/LTU.png"> LTU</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">5</th>
+                <th>7</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/MGL.png"> MGL</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/CZE.png"> CZE</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">12</th>
+                <th>15</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/EST.png"> EST</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">4</th>
+                <th>4</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/MEX.png"> MEX</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>5</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/VEN.png"> VEN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>3</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/AUT.png"> AUT</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/BLR.png"> BLR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">4</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">7</th>
+                <th>12</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ISR.png"> ISR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/GRE.png"> GRE</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">3</th>
+                <th>7</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/THA.png"> THA</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">2</th>
+                <th>6</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/VIE.png"> VIE</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/TPE.png"> TPE</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">4</th>
+                <th>5</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/EGY.png"> EGY</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">3</th>
+                <th>3</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/GRN.png"> GRN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/BRN.png"> BRN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/SLO.png"> SLO</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>4</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/KOS.png"> KOS</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/ALG.png"> ALG</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">2</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/IND.png"> IND</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>2</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/POR.png"> POR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/IRL.png"> IRL</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">3</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>3</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/TJK.png"> TJK</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/BDI.png"> BDI</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/DOM.png"> DOM</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/FIN.png"> FIN</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/PUR.png"> PUR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/MAR.png"> MAR</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/SGP.png"> SGP</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">1</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">0</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/UAE.png"> UAE</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>1</th>  
+            </tr>
+
+            <tr>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/flags/TTO.png"> TTO</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Gold.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Silver.png">0</th>
+                <th><img src="https://yesireth.github.io/LIM015-data-lovers/src/images/Bronze.png">1</th>
+                <th>1</th>  
+            </tr>
+
+        </table>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="estadistica.js"></script>
+
+</body>
+</html>
